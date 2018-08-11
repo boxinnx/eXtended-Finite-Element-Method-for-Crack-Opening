@@ -70,7 +70,7 @@ for i = 1 : ElemNum
 end
 
 % Get enriched nodes and elements around crack line
-[ElemsEnriched1Dummy, NodesEnriched1] = GetEnrichedNodesElems(Mesh, ff);
+[ElemsEnriched1Dummy, NodesEnriched1] = GetEnrichedNodesElems(Mesh, ff);  %undefined 'ff'????
 Pos = find(xx(NodesEnriched1)<0);                 
 NodesEnriched1 = NodesEnriched1(Pos);
 NodesEnriched1 = setdiff(NodesEnriched1, NodesEnriched2);           % ?????????????????
